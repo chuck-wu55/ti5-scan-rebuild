@@ -1,0 +1,25 @@
+钛虎扫描件参数化重建助手——快速使用
+
+使用前：
+1. Windows 10/11 64位，安装并激活 SolidWorks（本版已在 SolidWorks 2021 验证）。
+2. 软件会自动查找随包运行时、Codex 桌面应用或 PATH 中的 Codex CLI。在“模型设置”中点击“登录 Codex”，按浏览器提示授权 ChatGPT 账号。
+3. 先启动 SolidWorks 并等待主界面加载完成。
+
+操作：
+1. 双击 Ti5 Scan Rebuild.exe。
+2. 点击“环境自检”，确认 Codex 和 SolidWorks 均为绿色。Codex 窗口不必保持打开。
+3. 选择 STL、输出目录和正确单位（扫描件通常为 mm）。
+4. 选择“Codex 正向重建（推荐）”。
+5. 点击“开始对齐并正向重建”。复杂零件通常需要数十分钟，处理中不要关闭软件或 SolidWorks。
+
+完成门禁：
+软件仅在以下文件全部生成并通过检查后显示成功：
+- editable_rebuild.SLDPRT：含实体和正向建模特征。
+- editable_rebuild.STEP：重新导入后仍为实体。
+- alignment_manifest.json：功能基准、位置调整和变换记录。
+- review_report.json：重开、尺寸修改恢复、四视图和偏差证据。
+- codex_execution.log：执行日志，失败时用于排查。
+
+注意：
+扫描件不包含原始设计意图、公差和不可见结构。结果是可编辑的正向设计参考，制造前仍需工程师确认尺寸、公差、材料和工艺。
+“本地网格实体化（备用）”不会恢复草图和正向特征，不能代替 Codex 正向重建。

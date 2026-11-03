@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+settings.json
+*.key
+*.pem
+*.pfx
+
+# Build outputs
+build/
+build-*/
+debug-build/
+dist/
+dist-*/
+debug-dist/
+*.egg-info/
+
+# Local verification and task outputs
+verification-output/
+forward-verification/
+.test-temp/
+.test_tmp/
+task-output/
+outputs/
+logs/
+*.log
+
+# User CAD and scan data
+*.stl
+*.STL
+*.step
+*.STEP
+*.stp
+*.STP
+*.iges
+*.IGES
+*.igs
+*.IGS
+*.sldprt
+*.SLDPRT
+*.sldasm
+*.SLDASM
+*.slddrw
+*.SLDDRW
+*.3mf
+*.obj
+
+# Generated previews
+*.bmp
+*.tif
+*.tiff
+
+# Vendored skill development-only files (not needed at runtime)
+resources/solidworks-automation-skill/tests/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
