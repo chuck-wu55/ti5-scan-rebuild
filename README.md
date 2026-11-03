@@ -44,7 +44,7 @@ installed and authenticated.
 ## Quick start from source
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/chuck-wu55/ti5-scan-rebuild.git
 cd Ti5-Scan-Rebuild
 python -m pip install -r requirements.txt
 python .\main.py

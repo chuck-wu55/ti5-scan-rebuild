@@ -32,7 +32,7 @@ Codex 窗口无需一直打开，但本机必须安装并完成登录。
 ## 从源码运行
 
 ```powershell
-git clone <仓库地址>
+git clone https://github.com/chuck-wu55/ti5-scan-rebuild.git
 cd Ti5-Scan-Rebuild
 python -m pip install -r requirements.txt
 python .\main.py
@@ -77,4 +77,3 @@ Release 附件发布。
 
 SolidWorks、OpenAI、ChatGPT 和 Codex 是各自权利人的名称或商标；本项目与其
 不存在官方隶属或背书关系。
-
