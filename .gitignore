@@ -36,6 +36,7 @@ forward-verification/
 task-output/
 outputs/
 logs/
+release-assets/
 *.log
 
 # User CAD and scan data
